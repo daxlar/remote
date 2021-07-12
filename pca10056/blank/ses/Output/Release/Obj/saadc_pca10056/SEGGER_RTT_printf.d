@@ -24,7 +24,7 @@ Output/Release/Obj/saadc_pca10056/SEGGER_RTT_printf.o: \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/__crossworks.h \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdbool.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
  ../config/sdk_config.h \

@@ -35,7 +35,7 @@ Output/Release/Obj/saadc_pca10056/nrfx_clock.o: \
  ../../../../../../components/libraries/util/app_error.h \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdio.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
  ../../../../../../modules/nrfx/soc/nrfx_coredep.h \
  ../../../../../../modules/nrfx/soc/nrfx_atomic.h \

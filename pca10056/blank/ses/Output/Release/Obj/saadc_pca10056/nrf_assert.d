@@ -19,6 +19,6 @@ Output/Release/Obj/saadc_pca10056/nrf_assert.o: \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/__crossworks.h \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdbool.h \
  /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/libraries/util/sdk_errors.h \
- /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/libraries/util/nordic_common.h \
  /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/libraries/util/app_error_weak.h

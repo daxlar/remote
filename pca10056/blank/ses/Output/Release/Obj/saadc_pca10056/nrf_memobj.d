@@ -5,7 +5,7 @@ Output/Release/Obj/saadc_pca10056/nrf_memobj.o: \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdlib.h \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/__crossworks.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../config/sdk_config.h \
  ../../../../../../components/libraries/util/app_util_platform.h \

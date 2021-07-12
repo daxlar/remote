@@ -74,7 +74,9 @@
 #include "nrf_log.h"
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
+#include "nrf_delay.h"
 #include <joystick.h>
+#include <st7735_display.h>
  
 int main(void)
 {
@@ -87,8 +89,11 @@ int main(void)
     NRF_LOG_DEFAULT_BACKENDS_INIT();
     
     joystick_init();
+    gfx_initialization();
     int16_t joystick_x_value;
     int16_t joystick_y_value;
+
+    display_remote_settings();
 
 
     while(1){

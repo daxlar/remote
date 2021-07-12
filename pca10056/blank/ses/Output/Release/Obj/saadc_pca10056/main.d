@@ -1,5 +1,5 @@
 Output/Release/Obj/saadc_pca10056/main.o: \
- /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/examples/peripheral/nrfx_saadc_simple_low_power_app_timer_multichannel_oversample/main.c \
+ /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/examples/peripheral/remote_v2/main.c \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdbool.h \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdint.h \
  ../../../../../../components/libraries/log/nrf_log.h \
@@ -11,7 +11,7 @@ Output/Release/Obj/saadc_pca10056/main.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_os.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
- /Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
  ../../../../../../components/libraries/util/app_util.h \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stddef.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
@@ -48,4 +48,19 @@ Output/Release/Obj/saadc_pca10056/main.o: \
  /Applications/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50a/include/stdio.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
- joystick.h
+ ../../../../../../components/libraries/delay/nrf_delay.h \
+ ../../../../../../modules/nrfx/nrfx.h \
+ ../../../../../../integration/nrfx/nrfx_config.h \
+ ../../../../../../modules/nrfx/drivers/nrfx_common.h \
+ ../../../../../../modules/nrfx/mdk/nrf_peripherals.h \
+ ../../../../../../modules/nrfx/mdk/nrf52840_peripherals.h \
+ ../../../../../../integration/nrfx/nrfx_glue.h \
+ ../../../../../../integration/nrfx/legacy/apply_old_config.h \
+ ../../../../../../modules/nrfx/soc/nrfx_irqs.h \
+ ../../../../../../modules/nrfx/soc/nrfx_irqs_nrf52840.h \
+ ../../../../../../components/libraries/util/nrf_assert.h \
+ ../../../../../../modules/nrfx/soc/nrfx_coredep.h \
+ ../../../../../../modules/nrfx/soc/nrfx_atomic.h \
+ ../../../../../../components/libraries/util/sdk_resources.h \
+ ../../../../../../modules/nrfx/drivers/nrfx_errors.h joystick.h \
+ st7735_display.h
