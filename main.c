@@ -77,6 +77,8 @@
 #include "nrf_delay.h"
 #include <joystick.h>
 #include <st7735_display.h>
+#include <buttons.h>
+#include <debouncer.h>
  
 int main(void)
 {
@@ -90,6 +92,9 @@ int main(void)
     
     joystick_init();
     gfx_initialization();
+    buttons_init();
+    debouncer_init();
+
     int16_t joystick_x_value;
     int16_t joystick_y_value;
 
@@ -98,10 +103,8 @@ int main(void)
 
     while(1){
       joystick_read_x_y_values(&joystick_x_value, &joystick_y_value);
-      NRF_LOG_INFO("x_value: %d y_value: %d", joystick_x_value, joystick_y_value);
+      //NRF_LOG_INFO("x_value: %d y_value: %d", joystick_x_value, joystick_y_value);
       while(NRF_LOG_PROCESS() != NRF_SUCCESS);
     }
 }
 
-
-/** @} */

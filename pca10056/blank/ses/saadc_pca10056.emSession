@@ -2,7 +2,7 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="20" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="joystick.c" useHWbreakpoint="false"/>
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
@@ -62,15 +62,12 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="113" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="82" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="60" y="1569" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="1561" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="11" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="st7735_display.c" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="10" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="st7735_display.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="72" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/util/sdk_errors.h" selected="0" top="36" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="47" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/gfx/nrf_gfx.h" selected="0" top="14" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="119" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_spi.h" selected="0" top="80" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="joystick.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="316" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/drivers_ext/st7735/st7735.c" selected="1" top="288" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="63" y="18" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="buttons.c" selected="0" top="12" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="659" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/src/nrfx_gpiote.c" selected="0" top="623" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="83" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="69" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="3" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="buttons.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="32" y="407" useTextEdit="1" openedFrom="/Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/examples/peripheral/remote_v2/pca10056/blank/ses/buttons.c" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/include/nrfx_gpiote.h" selected="0" top="375" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="473" useTextEdit="1" openedFrom="/Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/modules/nrfx/drivers/src/nrfx_gpiote.c" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/hal/nrf_gpiote.h" selected="0" top="451" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="saadc_pca10056" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/drivers_ext/st7735" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="saadc_pca10056" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/Users/daxler/Documents/DeviceDownload/nRF5_SDK_17.0.2_d674dde/components/libraries/memobj" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

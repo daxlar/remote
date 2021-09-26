@@ -1,7 +1,14 @@
 #include <stdbool.h>
 #include <stdint.h>
+#include "nrf_log.h"
+#include "nrf_log_ctrl.h"
+#include "nrf_log_default_backends.h"
+#include "nrf_delay.h"
+
 #include <nrfx_saadc.h>
 #include <nrfx_gpiote.h>
+
+#include <debouncer.h>
 
 #define JOYSTICK_X_PIN      NRF_SAADC_INPUT_AIN0
 #define JOYSTICK_X_REF_PIN  NRF_SAADC_INPUT_AIN1
@@ -14,11 +21,13 @@ static nrf_saadc_value_t samples[SAADC_CHANNEL_COUNT];
 static nrfx_saadc_channel_t channels[SAADC_CHANNEL_COUNT] = {NRFX_SAADC_DEFAULT_CHANNEL_DIFFERENTIAL(JOYSTICK_X_PIN, JOYSTICK_X_REF_PIN, 0),
                                                              NRFX_SAADC_DEFAULT_CHANNEL_DIFFERENTIAL(JOYSTICK_Y_PIN, JOYSTICK_Y_REF_PIN, 1)};
 
-volatile int interruptDebugger = 0;
+volatile bool joystick_button_clicked = false;
 
 static void pin_event_handler(nrfx_gpiote_pin_t pin, nrf_gpiote_polarity_t action){
-  interruptDebugger++;
-  interruptDebugger %= 1000;                                              
+  joystick_button_clicked = true;
+  nrfx_gpiote_in_event_disable(JOYSTICK_SWITCH_PIN);
+  start_debouncing(JOYSTICK_BUTTON);
+  NRF_LOG_INFO("joystick button clicked");
 }
 
 void joystick_read_x_y_values(int16_t* x_value, int16_t* y_value){
@@ -60,7 +69,10 @@ void joystick_read_x_y_values(int16_t* x_value, int16_t* y_value){
 void joystick_init(void){
   volatile ret_code_t err_code;
 
-  err_code = nrfx_gpiote_init();
+  if(!nrfx_gpiote_is_init()){
+    nrfx_gpiote_init();
+  }
+
   nrfx_gpiote_in_config_t config = NRFX_GPIOTE_CONFIG_IN_SENSE_HITOLO(true);
   err_code = nrfx_gpiote_in_init(JOYSTICK_SWITCH_PIN, &config, pin_event_handler);
   nrfx_gpiote_in_event_enable(JOYSTICK_SWITCH_PIN, true);
@@ -77,5 +89,9 @@ void joystick_init(void){
   APP_ERROR_CHECK(err_code);
 
   while(nrfx_saadc_offset_calibrate(NULL) != NRFX_SUCCESS);
+}
+
+void enable_joystick_button(void){
+  nrfx_gpiote_in_event_enable(JOYSTICK_SWITCH_PIN, true);
 }
 
